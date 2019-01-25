@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
-
+import { Component } from '@angular/core';
+import { Vibration } from '@ionic-native/vibration/ngx';
+import { DeviceMotion } from '@ionic-native/device-motion/ngx';
+import {AngularFireDatabase,AngularFireObject} from '@angular/fire/database'
 @Component({
   selector: 'app-game-play',
   templateUrl: './game-play.page.html',
