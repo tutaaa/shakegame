@@ -9,7 +9,8 @@ import{AngularFireDatabaseModule} from '@angular/fire/database';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { environment } from 'src/environments/environment';
-
+import { DeviceMotion } from '@ionic-native/device-motion/ngx';
+import { Vibration } from '@ionic-native/vibration/ngx';
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
@@ -17,6 +18,8 @@ import { environment } from 'src/environments/environment';
   providers: [
     StatusBar,
     SplashScreen,
+    Vibration,
+    DeviceMotion,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]
